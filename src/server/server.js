@@ -1,7 +1,7 @@
 import express from 'express';
 import ReactDom from 'react-dom/server';
 
-import {Header} from '../sahared/Header';
+import {Header} from '../shared/Header';
 import {indexTemplate} from './indexTemplate'
 
 const app = express();
@@ -15,5 +15,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log('Server started on hhtp://localhost:3000'); 
+  console.log('Server started on http://localhost:3000'); 
 });
